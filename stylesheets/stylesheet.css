@@ -57,7 +57,8 @@ a {
   font-family: "Computer Modern Serif", "Palatino", Georgia, Times, serif;
   color: #fff;
   text-align: center;
-  background-color: #1A449B;
+  background-color: #051836;
+  background-size: cover;
   background-image: url("../images/pwl_meetup_background.jpg");}
 
 @media screen and (min-width: 64em) {
@@ -104,6 +105,43 @@ a {
 @media screen and (max-width: 42em) {
   .project-tagline {
     font-size: 1rem; } }
+
+ul.header-links {
+  padding-left: 0;
+  list-style: none; }
+  .header-links li {
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+    display: inline-block; }
+    .header-links li:not(:last-child):after {
+      padding-left: 0.8rem;
+      color: #fff;
+      content: "/"; }
+    .header-links li a {
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 1px;
+      font-weight: 200;
+      font-family: "Computer Modern Sans", "Gill Sans", Verdana, sans-serif; }
+      .header-links li a:hover {
+        color: rgba(255, 255, 255, 0.8); }
+@media screen and (max-width: 64em) {
+  .header-links li {
+    font-size: 1rem; }
+  .header-links li:after {
+    font-size: 1rem; } }
+@media screen and (max-width: 42em) {
+  /* On small screens, hide the text dividers (.link-div), add spacing for
+   * easier clicking, and add border dividers.
+   */
+  .header-links li {
+    display: block;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem; padding-top: 0.5rem; }
+    .header-links li:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      .header-links li:not(:last-child):after {
+        content: none; } }
+
 
 .main-content :first-child {
   margin-top: 0; }
